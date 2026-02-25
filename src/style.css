@@ -30,3 +30,25 @@ div#provinces {
   border-radius: 2em;
   margin: 1em
 }
+
+#provinces .province a {}
+
+#provinces .province a:link {
+  color: lightblue;
+}
+
+#provinces .province a:visited {
+  color: rgb(94, 178, 211);
+}
+
+#provinces .province a:hover {
+  color: skyblue;
+}
+
+#provinces .province a:visited:hover {
+  color: rgb(94, 178, 211);
+}
+
+#provinces .province a:active {
+  color: violet;
+}

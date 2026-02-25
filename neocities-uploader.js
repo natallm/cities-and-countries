@@ -6,7 +6,7 @@ import readline from "readline";
 process.loadEnvFile("./development.env")
 
 const files = fs.readdirSync("./src", { recursive: true, withFileTypes: true }).filter(path => !path.isDirectory())
-const filesToUpload = files.map(file => ({ name: file.name, path: path.join(process.cwd(), file.parentPath, file.name) }))
+const filesToUpload = files.map(file => ({ name: path.join(file.parentPath, file.name).replace("src/", ""), path: path.join(process.cwd(), file.parentPath, file.name) }))
 
 console.log("FILES TO UPLOAD")
 console.log(filesToUpload)
