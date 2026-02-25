@@ -1,2 +1,3 @@
-neocities-uploader.js
 node_modules
+.env
+development.env
